@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "title": "Pasta Carbonara",
+      "description": "A classic Italian dish made with spaghetti, eggs, and bacon",
+      "ingredients": [
+        "1 pound spaghetti",
+        "6 large eggs",
+        "1 cup grated Parmesan cheese",
+        "1/2 cup chopped bacon",
+        "Salt and pepper"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chicken Fajitas",
+      "description": "A Tex-Mex dish made with marinated chicken, onions, and peppers",
+      "ingredients": [
+        "1 pound boneless, skinless chicken breasts",
+        "1/4 cup lime juice",
+        "2 tablespoons olive oil",
+        "1 teaspoon chili powder",
+        "1/2 teaspoon cumin",
+        "1/2 teaspoon garlic powder",
+        "Salt and pepper",
+        "1 large onion, sliced",
+        "1 large bell pepper, sliced"
+      ]
+    }
+  ]
