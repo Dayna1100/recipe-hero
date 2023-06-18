@@ -1,3 +1,4 @@
+//import React, { useState, useEffect } from "react";
 import "./App.css";
 
 
@@ -13,5 +14,41 @@ const RecipeStep = () => {
     </div>
 )
 }
+
+    // function RecipeStep() {
+    //     const [recipes, setRecipes] = useState([]);
+      
+    //     useEffect(() => {
+    //       fetch("/recipes.json")
+    //         .then((response) => response.json())
+    //         .then((data) => setRecipes(data.recipes))
+    //         .catch((error) => console.log(error));
+    //     }, []);
+      
+    //     return (
+    //       <div>
+    //         {recipes.map((recipe) =>
+    //           recipe.steps.map((step) => (
+    //             <RecipeStep key={step.stepNumber} step={step} />
+    //           ))
+    //         )}
+    //       </div>
+    //     );
+    //   }
+//     const { stepNumber, description, imageUrl } = step;
+  
+//     return (
+//       <div className="recipe-step">
+//         <ul className="recipe-step-indicator">
+//           <li className="active">{stepNumber}</li>
+//         </ul>
+//         <div className="recipe-step-description">
+//           <p>{description}</p>
+//           <img src={`/images/${imageUrl}`} alt={`Step ${stepNumber}`} />
+//         </div>
+//       </div>
+//     );
+//   }
+  
 
 export default RecipeStep

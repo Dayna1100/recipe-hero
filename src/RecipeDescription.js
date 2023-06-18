@@ -3,9 +3,10 @@ import "./App.css";
 
 function RecipeDescription() {
   const [recipes, setRecipes] = useState([]);
+ 
 
   useEffect(() => {
-    fetch("/recipes.json")
+    fetch("./recipes.json")
       .then((response) => response.json())
       .then((data) => setRecipes(data.recipes))
       .catch((error) => console.log(error));
@@ -16,9 +17,9 @@ function RecipeDescription() {
       <ul>
         {recipes.map((recipe) => (
           <li key={recipe.name}>
+            <h2>{recipe.name}</h2>
             <div className="recipe-description">
               <img src={`images/${recipe.imageUrl}`} alt={recipe.name} />
-              <p>{recipe.name}</p>
               <p>{recipe.description}</p>
             </div>
           </li>
@@ -27,7 +28,4 @@ function RecipeDescription() {
     </div>
   );
 }
-
 export default RecipeDescription;
-
- 

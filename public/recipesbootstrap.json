@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Toast",
+      "description": "Creamy pasta with chicken",
+      "image": "./images/bread.jpg",
+      "ingredients": "Toast",
+      "difficulty": "medium"
+    },
+    {
+      "name": "Cheesy Bacon",
+      "description": "Mexican-style tacos with beef",
+      "image": "./images/cheesy-bacon.jpg",
+      "ingredients": "Cheesy Bacon",
+      "difficulty": "easy"
+    },
+    {
+      "name": "Framed Egg",
+      "description": "Spicy curry with chicken and veggies",
+      "image": "./images/framed-egg-1.jpg",
+      "ingredients": "Framed Egg",
+      "difficulty": "hard"
+    }
+  ]

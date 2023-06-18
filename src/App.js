@@ -1,24 +1,53 @@
 import "./App.css";
 import Header from "./Header";
-import RecipeList from "./RecipeListTest"
-import IngredientsSearch from "./IngredientsSearch";
-import RecipeCard from "./RecipeCard";
+//import IngredientsSearch from "./RecipeFinder";
+//import Recipe from "./Recipe.js";
+//import RecipeComponent from "./RecipeComponent";
+import BootstrapComponent from "./BootstrapComponent"
+import MyComponent from "./MyComponent";
 
+// const recipes = [
+//   {
+//     name: 'Framed Eggs',
+//     imageUrl: 'framed-egg.jpg',
+//     ingredients: ['Eggs', 'Bread'],
+//   },
+//   {
+//     name: 'Cheesy Eggs',
+//     imageUrl: 'cheesy-eggs.jpg',
+//     ingredients: ['Eggs', 'Cheese'],
+//   },
+//   {
+//     name: 'Toast',
+//     ingredients: ['Bread'],
+//   },
+//   {
+//     name: 'Scrambled Eggs',
+//     imageUrl: 'scrambled-eggs.webp',
+//     ingredients: ['Eggs'],
+//   },
+//   {
+//     name: 'Cheesy Bacon',
+//     imageUrl: 'cheesy-bacon.jpg',
+//     ingredients: ['Bacon', 'Cheese'],
+//   },
+// ];
 
 const App = () => {
   return (
   <div id="the-app">
     < Header />
     <main>
-      <IngredientsSearch />
+    < MyComponent/>
+      <BootstrapComponent />
+     {/* <IngredientsSearch recipes={recipes} />
+     < Recipe />  */}
+   {/* <RecipeComponent />  */}
       <ul className="recipes">
         <li>
-          < RecipeCard />
-        </li>
-        <li>
-          <div className="recipe-card">
-          <h2>Cheesy Eggs</h2>
-          </div>
+        <div className="recipe-card">
+          {/* < RecipeCard /> */}
+        </div>  
         </li>
         <li>
           <div className="recipe-card">
@@ -108,7 +137,6 @@ const App = () => {
               </p>
               <img src="/images/hot-skillet.jpg" alt="Step 1" />
             </div>
-            <RecipeList />
             <div className="command-bar">
               <button>Previous</button><button>Next</button>
             </div>

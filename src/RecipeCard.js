@@ -7,8 +7,7 @@ import CommandBar from "./CommandBar";
 const RecipeCard = () => {
   return (
           <div className="recipe-card">
-           <h2>Framed Eggs</h2> 
-          <RecipeDescription /><RecipeStep /><RecipeStepIndicator /><CommandBar />
+         <RecipeDescription /><RecipeStep /><RecipeStepIndicator /><CommandBar />
           </div> 
    )
 }
