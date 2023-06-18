@@ -4,7 +4,7 @@ import Header from "./Header";
 //import Recipe from "./Recipe.js";
 //import RecipeComponent from "./RecipeComponent";
 import BootstrapComponent from "./BootstrapComponent"
-import MyComponent from "./MyComponent";
+//import MyComponent from "./MyComponent";
 
 // const recipes = [
 //   {
@@ -38,7 +38,7 @@ const App = () => {
   <div id="the-app">
     < Header />
     <main>
-    < MyComponent/>
+    {/* < MyComponent/> */}
       <BootstrapComponent />
      {/* <IngredientsSearch recipes={recipes} />
      < Recipe />  */}

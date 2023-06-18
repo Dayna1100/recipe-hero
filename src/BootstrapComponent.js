@@ -2,33 +2,12 @@ import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, CardGroup, Card } from "react-bootstrap";
 
-// const recipes = [
-//   {
-//     name: "Toast",
-//     description: "Creamy pasta with chicken",
-//     image: "./images/bread.jpg",
-//     ingredients: "Toast",
-//     difficulty: "medium",
-//   },
-//   {
-//     name: "Cheesy Bacon",
-//     description: "Mexican-style tacos with beef",
-//     image: "./images/cheesy-bacon.jpg",
-//     ingredients: "Cheesy Bacon",
-//     difficulty: "easy",
-//   },
-//   {
-//     name: "Framed Egg",
-//     description: "Spicy curry with chicken and veggies",
-//     image: "./images/framed-egg-1.jpg",
-//     ingredients: "Framed Egg",
-//     difficulty: "hard",
-//   },
-// ];
+
 
 function RecipeSelector() {
+  const [recipes, setRecipes] = useState([]);
   const [selectedType, setSelectedType] = useState("");
-  const[recipes, setRecipes] = useState([]);
+  const [selectedDifficulty, setSelectedDifficulty] = useState("");
 
 useEffect(() => {
   fetch('/recipesbootstrap.json')
@@ -39,7 +18,8 @@ useEffect(() => {
   
   const filteredRecipes = recipes.filter(
     (recipe) =>
-      (selectedType === "" || recipe.ingredients === selectedType)
+      (selectedType === "" || recipe.ingredients === selectedType) &&
+      (selectedDifficulty === "" || recipe.difficulty === selectedDifficulty)
     );
 
   return (
@@ -56,6 +36,19 @@ useEffect(() => {
             <option value="Toast">Toast</option>
             <option value="Cheesy Bacon">Cheesy Bacon</option>
             <option value="Framed Egg">Framed Egg</option>
+          </Form.Control>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Difficulty</Form.Label>
+          <Form.Control
+            as="select"
+            value={selectedDifficulty}
+            onChange={(e) => setSelectedDifficulty(e.target.value)}
+          >
+            <option value="">All Difficulty Levels</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
           </Form.Control>
         </Form.Group>
       </Form>
