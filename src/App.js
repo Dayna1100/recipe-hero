@@ -4,7 +4,9 @@ import Header from "./Header";
 //import Recipe from "./Recipe.js";
 //import RecipeComponent from "./RecipeComponent";
 import BootstrapComponent from "./BootstrapComponent"
+import StarRating from "./StarRating";
 //import MyComponent from "./MyComponent";
+
 
 // const recipes = [
 //   {
@@ -38,6 +40,15 @@ const App = () => {
   <div id="the-app">
     < Header />
     <main>
+
+    <div>
+    <h1>Star Rating Component</h1>
+      <StarRating rating={3} />
+      <StarRating rating={4} />
+      <StarRating rating={5} />
+    </div>
+
+
     {/* < MyComponent/> */}
       <BootstrapComponent />
      {/* <IngredientsSearch recipes={recipes} />
